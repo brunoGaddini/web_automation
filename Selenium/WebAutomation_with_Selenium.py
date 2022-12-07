@@ -14,3 +14,5 @@ browser = webdriver.Chrome(service=service)
 # For perfect operation it is necessary to download the web driver corresponding to the chosen browser
 
 browser.get("https://pages.hashtagtreinamentos.com/arquivo-python-1jGh7kZSxQLoznA_GgwnWa8f7LEl3kKCZ?origemurl=hashtag_yt_org_planilhapyt_8AMNaVt0z_M")
+
+#https://www.youtube.com/watch?v=8AMNaVt0z_M 18:24
