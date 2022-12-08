@@ -19,6 +19,17 @@ browser = webdriver.Chrome(service=service)
 
 # Accessing the address to carry out the automation process
 browser.get("https://pages.hashtagtreinamentos.com/inscricao-minicurso-python-automacao-org?origemurl=hashtag_yt_org_minipython_8AMNaVt0z_M")
+
+# Searching for an element within the page and write in the fields
+browser.find_element('xpath',
+                     '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/div[1]/div/div[1]/div/input').send_keys('Bruno')
+
+browser.find_element('xpath',
+                     '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/div[1]/div/div[2]/div/input').send_keys('bruno_gaddini@hotmail.com')
+
+browser.find_element('xpath',
+                     '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/div[1]/div/div[3]/div/input').send_keys('')
+
 # Setting browser read wait with some conditions
 try:
     element = WebDriverWait(browser, 10).until(
@@ -26,6 +37,3 @@ try:
     )
 finally:
     browser.quit()
-
-# Searching for an element within the page
-browser.find_element()
