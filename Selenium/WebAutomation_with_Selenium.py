@@ -28,7 +28,10 @@ browser.find_element('xpath',
                      '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/div[1]/div/div[2]/div/input').send_keys('bruno_gaddini@hotmail.com')
 
 browser.find_element('xpath',
-                     '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/div[1]/div/div[3]/div/input').send_keys('')
+                     '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/div[1]/div/div[3]/div/input').send_keys('(xx)xxxxx-xxxx')
+
+browser.find_element('xpath',
+                     '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/button').click()
 
 # Setting browser read wait with some conditions
 try:
